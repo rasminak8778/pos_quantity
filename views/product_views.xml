@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="action_view_product_quant" model="ir.ui.view">
+            <field name="name">product.product.quant.form</field>
+            <field name="model">product.product</field>
+            <field name="inherit_id" ref="product.product_normal_form_view"/>
+            <field name="arch" type="xml">
+                <xpath expr="//field[@name='product_tag_ids']" position="after">
+                        <field name="product_quant"/>
+                </xpath>
+            </field>
+        </record>
+    </data>
+</odoo>
